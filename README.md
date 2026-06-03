@@ -56,7 +56,7 @@ Add the `NowSecure Assessment Configuration` build step to your job and fill in 
 | `analysisType` | Type of assessment to run. `STATIC` runs static analysis only; `FULL` runs both static and dynamic analysis. | `STATIC` |
 | `minimumScore` | The assessment score below which the build will be marked as failed. Set to `0` to disable score gating. | `0` |
 | `pollingDurationMinutes` | How long (in minutes) to wait for the assessment to complete before timing out. | `20` |
-| `apiHost` | NowSecure API base URL. Only change this if you are on a single-tenant NowSecure instance. | `https://lab-api.nowsecure.com` |
+| `apiHost` | NowSecure API base URL. Only change this if you are on a single-tenant NowSecure instance. | `https://api.nowsecure.com` |
 | `uiHost` | NowSecure UI base URL. Only change this if you are on a single-tenant NowSecure instance. | `https://app.nowsecure.com` |
 | `logLevel` | Log verbosity for the NowSecure assessment task. One of `DEBUG`, `INFO`, `WARN`, `ERROR`. | `INFO` |
 

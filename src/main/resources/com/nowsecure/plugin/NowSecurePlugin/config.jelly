@@ -16,7 +16,7 @@
             <f:textbox default="nowsecure"/>
         </f:entry>
         <f:entry title="API Host" field="apiHost" description="${%APIHostDesc}">
-            <f:textbox default="https://lab-api.nowsecure.com" />
+            <f:textbox default="https://api.nowsecure.com" />
         </f:entry>
         <f:entry title="UI Host" field="uiHost" description="${%UIHostDesc}">
             <f:textbox default="https://app.nowsecure.com" />
