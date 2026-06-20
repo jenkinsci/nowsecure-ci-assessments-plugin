@@ -26,7 +26,7 @@ jobs:
 
             find . -name 'ns_*' -delete
 
-            gh release --repo nowsecure/nowsecureci download --clobber \
+            gh release --repo nowsecure/nowsecure-ci download --clobber \
               --pattern 'ns_darwin-arm64*' \
               --pattern 'ns_linux-amd64*' \
               --pattern 'ns_windows-amd64*'
@@ -44,8 +44,8 @@ jobs:
       - name: Commit changes
         working-directory: ./src/main/resources
         run: |
-          PR_TITLE="chore(deps): update nowsecure-ci binary to ${{ env.LATEST_VERSION }}"
-          BRANCH_NAME="chore/ns-binary/${{ env.LATEST_VERSION }}"
+          PR_TITLE="fix(deps): update nowsecure-ci binary to ${{ env.LATEST_VERSION }}"
+          BRANCH_NAME="fix/ns-binary/${{ env.LATEST_VERSION }}"
 
           git config --global user.email "devops@nowsecure.com"
           git config --global user.name "Nora The Narwhal"
