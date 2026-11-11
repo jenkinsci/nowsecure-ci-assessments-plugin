@@ -21,4 +21,5 @@ buildNumber.properties
 .settings/
 
 .direnv/
+.ds_store
 
